@@ -1,0 +1,21 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "client-install": "cd ../web-front-end && yarn install",
+    "start": "node src/index.js",
+    "server": "nodemon src/index.js",
+    "client": "cd ../web-front-end && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
