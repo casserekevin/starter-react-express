@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "client-install": "cd ../web-front-end && yarn install",
+    "install-back": "yarn install",
+    "install-front": "cd ../web-front-end && yarn install",
+    "install-all": "yarn install-back && yarn install-front",
     "start": "node src/index.js",
     "server": "nodemon src/index.js",
     "client": "cd ../web-front-end && yarn start",
